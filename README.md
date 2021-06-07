@@ -1,5 +1,7 @@
 ## Promo Code
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/CyberSai/promo/Laravel)
+
 Promo Code API allow you to generate Promo code for an events.
 
 ## Usage
