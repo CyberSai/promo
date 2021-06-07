@@ -4,6 +4,30 @@
 
 Promo Code API allow you to generate Promo code for an events.
 
+## Setup
+Clone the project cd into it
+``` bash
+git clone https://github.com/CyberSai/promo
+cd promo
+```
+Copy .env.example to .env and replace with your database credentials. Then generate a new encryption key. Then migrate your database
+``` bash
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
+To test run
+``` bash
+php artisan test
+// or
+vendor/bin/phpunit
+```
+
+## Production optimizations
+On Production environment, cache to increase speed
+``` bash
+php artisan route:cache
+```
 ## Usage
 
 The base uri is `http://localhost:8000/api/v1`
